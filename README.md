@@ -4,13 +4,14 @@ Api para calculo de distancia entre duas ou mais cidades.
 
 ## 🔧 Funçoes
 
-### Get "/":
-
--   Swagger
-
 ### Get "/api/distancia":
 
 -   Realiza o calculo da distancia entre as cidades passadas no argumento "endereco" utilizando a fórmula de haversine
+    Exemplo de endpoint:
+
+```
+/api/distancia?endereco=Av. Rio Branco, 1 Centro, Rio de Janeiro RJ, 20090003; Praça Mal. Âncora, 122 Centro, Rio de Janeiro RJ, 20021200;
+```
 
 ### Get "/api/distancia-euclidiana":
 

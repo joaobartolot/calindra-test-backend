@@ -8,9 +8,13 @@ class DistanciaModel:
         self.endereco_b = endereco_b
         self.distancia = distancia
 
-    def calcular_distancia(self):
-        self.distancia = haversine(
-            self.endereco_a.ponto_cartesiano(), self.endereco_b.ponto_cartesiano())
+    def calcular_distancia(self, euclidiana: bool = False):
+        if not euclidiana:
+            self.distancia = haversine(
+                self.endereco_a.ponto_cartesiano(), self.endereco_b.ponto_cartesiano())
+        else:
+            self.distancia = calcular_distancia_euclidiana(
+                self.endereco_a.ponto_cartesiano(), self.endereco_b.ponto_cartesiano())
 
     def to_json(self):
         return {
