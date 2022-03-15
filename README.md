@@ -1,5 +1,3 @@
-<img src="exemplo-image.png" alt="exemplo imagem">
-
 # Distancia Geocoding
 
 Api para calculo de distancia entre duas ou mais cidades.
